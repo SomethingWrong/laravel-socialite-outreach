@@ -59,9 +59,9 @@ You will need to add an entry to the services configuration file so that after c
 
 ```php
 'spotify' => [
-    'client_id' => env('SPOTIFY_KEY'),
-    'client_secret' => env('SPOTIFY_SECRET'),
-    'redirect' => env('SPOTIFY_REDIRECT_URI')
+    'client_id' => env('OUTREACH_KEY'),
+    'client_secret' => env('OUTREACH_SECRET'),
+    'redirect' => env('OUTREACH_REDIRECT_URI')
 ],
 ```
 
