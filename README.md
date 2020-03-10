@@ -1,13 +1,13 @@
 # Socialite - Outreach driver
 
-##1. Installation
+## 1. Installation
 
 ```
 // This assumes that you have composer installed globally
 composer require socialiteproviders/spotify
 ```
 
-##2. Service Provider
+## 2. Service Provider
 Remove `Laravel\Socialite\SocialiteServiceProvider` from your providers[] array in `config\app.php` if you have added it already.
 
 Add `\SocialiteProviders\Manager\ServiceProvider::class` to your providers[] array in `config\app.php`.
@@ -24,7 +24,7 @@ For example:
 
 Note: If you would like to use the Socialite Facade, you need to install it.
 
-##3. Event Listener
+## 3. Event Listener
 
 Add `SocialiteProviders\Manager\SocialiteWasCalled` event to your `listen[]` array in `app/Providers/EventServiceProvider`.
 
@@ -50,13 +50,16 @@ protected $listen = [
 ];
 ```
 
-###Reference
+### Reference
+
 Laravel docs about events
 Laracasts video on events in Laravel 5
-##4. Configuration setup
+
+## 4. Configuration setup
+
 You will need to add an entry to the services configuration file so that after config files are cached for usage in production environment (Laravel command artisan config:cache) all config is still available.
 
-###Add to config/services.php.
+### Add to config/services.php.
 
 ```php
 'spotify' => [
@@ -66,7 +69,7 @@ You will need to add an entry to the services configuration file so that after c
 ],
 ```
 
-##5. Usage
+## 5. Usage
 
 Laravel docs on configuration
 
@@ -76,7 +79,7 @@ You should now be able to use it like you would regularly use Socialite (assumin
 return Socialite::with('spotify')->redirect();
 ```
 
-###Lumen Support
+### Lumen Support
 
 You can use Socialite providers with Lumen. Just make sure that you have facade support turned on and that you follow the setup directions properly.
 
