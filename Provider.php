@@ -61,7 +61,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get('https://api.outreach.io/api/v2/user', [
+        $response = $this->getHttpClient()->get('https://api.outreach.io/api/v2', [
             'headers' => [
                 'Authorization' => 'Bearer '.$token,
             ],
