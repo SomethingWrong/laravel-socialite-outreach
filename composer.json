@@ -7,7 +7,7 @@
         "email": "robertlesterjr@mac.com"
     }],
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": "^8.1",
         "ext-json": "*",
         "socialiteproviders/manager": "~2.0 || ~3.0"
     },
